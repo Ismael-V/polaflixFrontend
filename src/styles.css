@@ -1,1 +1,412 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+.main-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 90%;
+}
+
+.logotype-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe Print';
+}
+
+.logotype-box-logo{
+    font-family: "Bebas Neue";
+    margin: 0px;
+}
+
+.logotype-box > img{
+    width: 4em;
+    height: 4em;
+}
+
+.logotype-box > p{
+    font-size: 2em;
+    margin:0px;
+}
+
+.horizontal-line-separator {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 3px;
+    background-color: black;
+    border: none;
+}
+
+.vertical-line-separator {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 3px;
+    height: 2em;
+    background-color: black;
+    border: none;
+}
+
+.navigation-box{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+    font-family: roboto;
+}
+
+.my-series-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.my-series-box > p{
+    margin: 0px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-family: roboto;
+}
+
+.my-series-box-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+.my-series-box-content > p{
+    margin: 0px;
+    font-family: roboto;
+    width: fit-content;
+}
+
+.my-series-box-content > p:hover{
+    cursor:pointer;
+    color:#b00610;
+}
+
+.banner-box{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 40px;
+    text-align: center;
+    height: 4em;
+    font-size: 2em;
+}
+
+.btn-right-triangle {
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    background: #e30915;
+    /* clip-path recorta el div en la forma que pongas en polygon() */
+    clip-path: polygon(0% 0%, 87% 50%, 0% 100%, 0% 0%);
+}
+
+.btn-left-triangle {
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    background: #e30915;
+    /* clip-path recorta el div en la forma que pongas en polygon() */
+    clip-path: polygon(100% 0%, 100% 100%, 13% 50%, 100% 0%);
+}
+
+.btn-right-triangle:hover{
+    background: #b00610; /* tono más oscuro al pasar el ratón */
+}
+
+.btn-left-triangle:hover{
+    background: #b00610; /* tono más oscuro al pasar el ratón */
+}
+
+.series-navigation-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family: roboto;
+}
+
+.series-navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+}
+
+.series-navigation-bar > p{
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.series-empty-box{
+    width : 8em; 
+}
+
+.series-category{
+    width : fit-content;
+    border-radius: 5%;
+    background-color: darkgray;
+    color: white;
+}
+
+.series-category > p{
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.series-box{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8em;
+    margin-top: 2em;
+    font-family: roboto;
+    font-size: 1.2em;
+}
+
+.series-box-episodes{
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+}
+
+.series-box-episodes-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.series-box-episodes-item > p{
+    width: 16em;
+    cursor: pointer;
+}
+
+.series-box-episodes-item > p:hover{
+    color:#b00610;
+}
+
+.series-box-seen{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
+}
+
+.series-box-seen > p{
+    margin-right: 20px;
+    font-style: italic;
+}
+
+.series-box-seen > a{
+    margin-right: 20px;
+    text-decoration: none !important;
+    font-style: italic;
+}
+
+.btn-cross {
+    cursor: pointer;
+    width: 0.75em;
+    height: 0.75em;
+    background: #e30915;
+    /* clip-path recorta el div en la forma que pongas en polygon() */
+    clip-path: polygon(25% 0%, 50% 25%, 75% 0%, 100% 25%, 75% 50%, 100% 75%, 75% 100%, 50% 75%, 25% 100%, 0% 75%, 25% 50%, 0% 25%);
+}
+
+.btn-cross:hover{
+    background: #b00610; /* tono más oscuro al pasar el ratón */
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12em;
+    width: 40em;
+    font-family: roboto;
+    font-size: 1.2em;
+    background-color: #ebf6ff;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.serie-description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    width: 40em;
+    font-family: roboto;
+    font-size: 1.2em;
+    background-color: #cccccc;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.description-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.description-content{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search-box{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box > div > a{
+    margin-right: 10px;
+    text-decoration: none !important;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.search-box-prompt{
+    display: flex;
+    border-radius: 30px;
+}
+
+.search-box-prompt > textarea{
+    width: 24em;
+    resize: none;
+}
+
+.search-box-prompt > button{
+    width: 6em;
+}
+
+.list-series-box{
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.list-margin{
+    margin-top: 6em;
+}
+
+.list-series-box-item{
+    display: flex;
+    flex-direction: row;
+    font-family: roboto;
+    font-size: 1.2em;
+}
+
+.list-series-box-item > p{
+    width: 16em;
+    cursor: pointer;
+}
+
+.list-series-box-item > p:hover{
+    color:#b00610;
+}
+
+.list-series-box-item > a{
+    margin-right: 10px;
+    text-decoration: none !important;
+    font-style: italic;
+}
+
+.facturas-navigation-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-family: roboto;
+}
+
+.facturas-navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+}
+
+.facturas-navigation-bar > p{
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.facturas-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 4em;
+}
+
+.facturas-box th{
+    font-family: "roboto";
+    text-align: center;
+}
+
+.facturas-box td{
+    font-family: "roboto";
+    text-align: center;
+}
+
+.facturas-box-aligned-right{
+    text-align: right !important;
+}
+
+.facturas-summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 2em;
+}
+
+.facturas-summary > p{
+    margin: 0px;
+    font-size: 1.5em;
+    font-family: "roboto";
+}
+
+.factura-total{
+    width : fit-content;
+    border-radius: 5%;
+    background-color: rgb(101, 100, 100);
+    color: white;
+    margin-right: 4em;
+    align-content: center;
+}
+
+.factura-total > p{
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1em;
+    font-family: "roboto";
+}
